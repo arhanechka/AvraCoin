@@ -1,12 +1,13 @@
 // var ConvertLib = artifacts.require("./ConvertLib.sol");
 // var MetaCoin = artifacts.require("./MetaCoin.sol");
+// var AvraToken = artifacts.require("./AvraToken.sol");
 //
 // module.exports = function(deployer) {
 //   deployer.deploy(ConvertLib);
 //   deployer.link(ConvertLib, MetaCoin);
 //   deployer.deploy(MetaCoin);
+//   deployer.deploy(AvraToken);
 // };
-
 const GustavoCoinCrowdsale = artifacts.require("./GustavoCoinCrowdsale.sol")
 
 module.exports = function(deployer, network, accounts) {
@@ -17,4 +18,3 @@ module.exports = function(deployer, network, accounts) {
 
   deployer.deploy(GustavoCoinCrowdsale, startTime, endTime, rate, wallet)
 };
-
